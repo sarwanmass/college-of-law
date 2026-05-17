@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RASHTRAKAVI KUVEMPU COLLEGE OF LAW</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation & Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <img id="headerLogo" src="C:\Users\UE\Downloads\files\kuvempu-law-college\kuvempu-law-college' viewBox='0 0 100 100'%3E%3Crect fill='%231e3a8a' width='100' height='100' rx='50'/%3E%3Ctext x='50' y='60' font-size='40' fill='white' text-anchor='middle' font-weight='bold'%3EKL%3C/text%3E%3C/svg%3E" alt="College Logo" class="header-logo">
+                    <div class="college-title">
+                        <h1>RASHTRAKAVI KUVEMPU</h1>
+                        <p>College of Law</p>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#courses" class="nav-link" data-section="courses">Courses</a></li>
+                    <li><a href="#faculty" class="nav-link" data-section="faculty">Faculty</a></li>
+                    <li><a href="#committees" class="nav-link" data-section="committees">Committees</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    <li><a href="admin.html" class="nav-link admin-link">Admin</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Excellence in Legal Education</h1>
+            <p class="hero-subtitle">Shaping Future Advocates & Legal Professionals</p>
+            <button class="cta-button" onclick="document.getElementById('courses').scrollIntoView({behavior: 'smooth'})">Explore Courses</button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About KUVEMPU COLLEGE OF LAW</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Institute Overview</h3>
+                    <p>RASHTRAKAVI KUVEMPU COLLEGE OF LAW applied for affiliation to Karnataka State Law University and Bar Council of India. , we provide comprehensive legal education for aspiring law professionals.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Location & Contact</h3>
+                    <p><strong>Address:</strong> No.10, near Janapriya Apartment, Kadabagere, Bangalore – 562130</p>
+                    <p><strong>Phone:</strong> 9886129222 / 9663695361</p>
+                    <p><strong>Email:</strong> kuvempulawclg@gmail.com | shivannabub@gmail.com</p>
+                </div>
+                <div class="about-card">
+                    <h3>Accreditation</h3>
+                    <p>Waiting for Affiliation from Karnataka State Law University and Bar Council of India, ensuring quality education and professional standards in legal studies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2 class="section-title">Course Offered</h2>
+            <div class="course-card">
+                <h3>3 Years LLB Programme</h3>
+                <div class="course-details">
+                    <div class="detail-item">
+                        <h4>Duration</h4>
+                        <p>3 Years (6 Semesters) | 18 weeks per semester</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Eligibility</h4>
+                        <ul class="eligibility-list">
+                            <li><strong>General Category:</strong> Graduation with 45% marks (44.5% and above)</li>
+                            <li><strong>OBC Category:</strong> Graduation with 42% marks (41.5% and above)</li>
+                            <li><strong>SC/ST Category:</strong> Graduation with 40% marks (39.5% and above)</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Required Documents</h4>
+                        <ul class="document-list">
+                            <li>SSLC/10th Mark Statement (original + 2 copies)</li>
+                            <li>PUC/12th Mark Statement (original + 2 copies)</li>
+                            <li>Degree Mark Statement (original + 2 copies)</li>
+                            <li>Transfer Certificate</li>
+                            <li>Migration Certificate (if non-Karnataka graduation)</li>
+                            <li>8 Passport-size Photographs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="faculty-section">
+        <div class="container">
+            <h2 class="section-title">Our Faculty</h2>
+            <div class="faculty-grid" id="facultyGrid">
+                <!-- Faculty members will be loaded here from data/storage -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Committees Section -->
+    <section id="committees" class="committees-section">
+        <div class="container">
+            <h2 class="section-title">Statutory Committees & Cells</h2>
+            <div class="committees-grid">
+                <div class="committee-card">
+                    <h3>Anti-Ragging Cell</h3>
+                    <p>Maintains a ragging-free environment on campus and ensures student welfare through awareness and preventive measures as per UGC guidelines.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>Student Grievance Redressal Committee</h3>
+                    <p>Provides a fair and transparent mechanism for addressing student grievances and ensuring timely resolution of complaints.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>National Service Scheme (NSS)</h3>
+                    <p>Engages students in community service and social development activities to bring positive change in society.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>Legal Aid Cell</h3>
+                    <p>Provides free legal aid to underprivileged sections of society, enabling law students to serve as social engineers.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>Human Rights Cell</h3>
+                    <p>Raises awareness about human rights and promotes dignity and justice among faculty, staff, and students.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>SC/ST Cell</h3>
+                    <p>Ensures adequate representation and welfare of SC/ST students in accordance with government policies and guidelines.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>Women's Grievance Cell</h3>
+                    <p>Addresses issues related to women students and staff, ensuring a safe and respectful campus environment.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>Disciplinary Committee</h3>
+                    <p>Maintains discipline and order, investigates misconduct, and promotes a culture of responsibility and respect.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>Moot Court</h3>
+                    <p>Provides practical training through moot court competitions, trial advocacy, and judgment writing exercises.</p>
+                </div>
+                <div class="committee-card">
+                    <h3>Internal Quality Assurance Cell (IQAC)</h3>
+                    <p>Ensures institutional quality and compliance with NAAC guidelines for continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Section -->
+    <section id="management" class="management-section">
+        <div class="container">
+            <h2 class="section-title">College Leadership</h2>
+            <div class="management-grid">
+                <div class="management-card">
+                    <h3>Board of Management</h3>
+                    <p><strong>Chairman:</strong> Mr. Shivanna B</p>
+                    <p>Rashtrakavi Kuvempu Education Cultural and Charitable Trust, Bangalore</p>
+                </div>
+                <div class="management-card">
+                    <h3>Principal</h3>
+                    <p><strong>Dr. Gurumurthy T.N</strong></p>
+                    <p>LL.M., Ph.D | 10 Years Experience</p>
+                    <p>Email: murthyguru1987@gmail.com | Ph: 9916246833</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>📍 Address</h3>
+                    <p>No.10, near Janapriya Apartment<br>Kadabagere, Bangalore – 562130<br>Karnataka, India</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Phone</h3>
+                    <p>+91 9886129222<br>+91 9663695361</p>
+                </div>
+                <div class="contact-card">
+                    <h3>✉️ Email</h3>
+                    <p>kuvempulawclg@gmail.com<br>shivannabub@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 RASHTRAKAVI KUVEMPU COLLEGE OF LAW. All rights reserved.</p>
+            <p>Waiting for Affiliaion from Karnataka State Law University and Bar Council of India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

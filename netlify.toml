@@ -1,0 +1,38 @@
+# Netlify Configuration for Kuvempu College Website
+
+[build]
+  # No build process needed - pure HTML/CSS/JS site
+  command = "echo 'No build required'"
+  publish = "."
+
+# Redirect rules for SPA-like behavior
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 200
+
+# Cache headers for performance
+[[headers]]
+  for = "/"
+    [headers.values]
+      Cache-Control = "max-age=3600"
+
+[[headers]]
+  for = "/*.html"
+    [headers.values]
+      Cache-Control = "max-age=1800"
+
+[[headers]]
+  for = "/*.css"
+    [headers.values]
+      Cache-Control = "max-age=31536000"
+
+[[headers]]
+  for = "/*.js"
+    [headers.values]
+      Cache-Control = "max-age=31536000"
+
+# Performance optimization
+[context.production]
+  command = "echo 'Ready for production'"
+  publish = "."
